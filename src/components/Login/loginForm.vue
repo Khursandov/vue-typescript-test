@@ -111,14 +111,16 @@ export default class LoginForm extends Vue {
   position: absolute;
   top: 0;
   left: 0;
-  height: 19px;
-  width: 19px;
-  background-color: #eee;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 2px solid #AAAAAA;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #fff;
+  border: 2px solid #0075FF;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -140,8 +142,7 @@ export default class LoginForm extends Vue {
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-  left: 6px;
-  top: 3px;
+  left: 5px;
   width: 4px;
   height: 8px;
   border: solid white;

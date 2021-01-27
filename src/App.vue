@@ -15,6 +15,7 @@ body {
   width: 100%;
   height: 100vh;
 }
+
 #app {
   font-family: Inter;
   -webkit-font-smoothing: antialiased;
@@ -22,17 +23,4 @@ body {
   text-align: center;
   height: 100vh;
 }
-
-// #nav {
-//   padding: 30px;
-
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
 </style>

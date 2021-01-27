@@ -1,6 +1,6 @@
 <template>
     <div class="input">
-        <i class="input--icon" :class="icon"></i>
+        <i class="input--icon" :class="icon + (active ? ' text-primary' : '') "></i>
         <input :placeholder="label" @focus="active = true" @blur="active = false" :type="type" v-model="value" class="input--field text-left" @input="onChange">
     </div>
 </template>
@@ -21,6 +21,7 @@ export default class CustomInput extends Vue {
   @Prop() icon!: string;
   
   value = ''
+  active = false
 
   onChange() {
     this.$emit('onInput', this.value);
@@ -56,14 +57,8 @@ export default class CustomInput extends Vue {
 
     &:focus {
       outline: none;
-      // transition: all 2s;
       border-bottom: solid 2px #0075FF;
     }
-
-    // &:focus,  &:after{
-    //   outline: none;
-    //   border-bottom: solid 15px #0075FF;
-    // }
 
     &:before {
       content: "";
