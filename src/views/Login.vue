@@ -22,10 +22,13 @@ export default class Home extends Vue {
 <style>
 .login-bg {
   background: url('../assets/Images/Login/image2.png') no-repeat;
-  background-size: 100% 100%;
-  padding: 218px 504px 216px 483px;
+  background-size: cover;
+  background-position: center center;
   height: 100vh;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
 

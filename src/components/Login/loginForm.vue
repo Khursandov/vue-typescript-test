@@ -1,5 +1,5 @@
 <template>
-  <form class="login" @submit.prevent="onSubmit">
+  <div class="login">
     <div class="login__wrapper">
       <h1 class="login__wrapper--title text-left m-0">
         Desire RolePlay
@@ -8,7 +8,7 @@
         Лучший проект игровых серверов за всю историю GTA V
       </p>
     </div>
-    <div class="login__form text-center">
+    <form @submit.prevent="onSubmit" class="login__form text-center">
       <h2  class="login__form--title m-0">
         Авторизация
       </h2>
@@ -21,7 +21,6 @@
         icon="fa fa-user"
         @onInput="name = $event" 
       />
-      <!-- {{ $v.firstName.required }} -->
       <custom-input
         label="Пароль"
         type="password"
@@ -53,8 +52,8 @@
           </router-link>
         </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </template>
 <script lang="ts">
 
