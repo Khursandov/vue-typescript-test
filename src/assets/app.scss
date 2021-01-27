@@ -1,0 +1,65 @@
+@import './Font-awesome/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between!important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.text-grey {
+    color: #AAAAAA;
+}
+
+.text-primary {
+    color: #0075FF;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    &:active {
+        outline: none;
+        border: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-rounded {
+    border-radius: 83px;
+    padding: 10px;
+}
+
+.primary {
+    color: white;
+    background: #0075FF;
+}
+
+.checkbox {
+    width: 19px;
+    height: 19px;
+}
