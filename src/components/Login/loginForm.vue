@@ -126,6 +126,7 @@ export default class LoginForm extends Vue {
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #0075FF;
+  border: 2px solid #0075FF;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
